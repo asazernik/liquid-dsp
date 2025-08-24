@@ -404,7 +404,6 @@ int QDSYNC(_execute_detect)(QDSYNC() _q,
 
         // run buffered samples through synchronizer
         unsigned int buf_len = QDETECTOR(_get_buf_len)(_q->detector);
-        QDSYNC(_execute)(_q, v, buf_len);
     }
     return LIQUID_OK;
 }
